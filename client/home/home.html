@@ -1,0 +1,16 @@
+﻿<body>
+    {{> home}}
+</body>
+
+<template name="home">
+    <ul>
+        {{#each peopleByFirstLetter}}
+        <li>{{letter}} - {{count}}</li>
+        {{/each}}
+    </ul>
+    <ul>
+        {{#each people}}
+        <li>{{name}}</li>
+        {{/each}}
+    </ul>
+</template>
